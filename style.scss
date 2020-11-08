@@ -4,16 +4,16 @@ body {
 }
 
 .wrapper {
-  background: #c33764; /* fallback for old browsers */
+  background: #23074d; /* fallback for old browsers */
   background: -webkit-linear-gradient(
-    to bottom,
-    #1d2671,
-    #c33764
+    to left,
+    #cc5333,
+    #23074d
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
-    to bottom,
-    #1d2671,
-    #c33764
+    to left,
+    #cc5333,
+    #23074d
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   #scene {
@@ -27,7 +27,7 @@ body {
   .moon {
     width: 45vmin;
     height: 45vmin;
-    background: rgba(255, 255, 255, 0.9);
+    background: #ffffffb1;
     border-radius: 100%;
 
     box-shadow: 0 0 0 70px #ffffff25, 0 0 0 140px #ffffff25,
@@ -76,13 +76,30 @@ body {
 }
 .portfolio {
   position: absolute;
-  right: 35vw;
+  right: 30vw;
   top: 50%;
   transform: translateY(-50%) !important;
   font-size: 5rem;
   color: #ff4d5a;
   text-shadow: 10px 10px 0 #00000030;
+  z-index: 11;
+  h3 {
+  }
 }
+
+.main-moon {
+  position: absolute;
+  right: 20vw;
+  top: 50%;
+  transform: translateY(-50%) !important;
+  .circle {
+    width: 45vmin;
+    height: 45vmin;
+    border-radius: 100%;
+    background: #fff;
+  }
+}
+
 #fp-nav {
   position: fixed;
   z-index: 100;

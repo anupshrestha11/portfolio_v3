@@ -4,11 +4,11 @@ body {
 }
 
 .wrapper {
-  background: #c33764;
+  background: #23074d;
   /* fallback for old browsers */
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, left bottom, from(#1d2671), to(#c33764));
-  background: linear-gradient(to bottom, #1d2671, #c33764);
+  background: -webkit-gradient(linear, right top, left top, from(#cc5333), to(#23074d));
+  background: linear-gradient(to left, #cc5333, #23074d);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -24,7 +24,7 @@ body {
 .wrapper .moon {
   width: 45vmin;
   height: 45vmin;
-  background: rgba(255, 255, 255, 0.9);
+  background: #ffffffb1;
   border-radius: 100%;
   -webkit-box-shadow: 0 0 0 70px #ffffff25, 0 0 0 140px #ffffff25, 0 0 0 210px #ffffff25, 0 0 0 280px #ffffff25, 0 0 0 350px #ffffff25, 0 0 0 420px #ffffff25;
           box-shadow: 0 0 0 70px #ffffff25, 0 0 0 140px #ffffff25, 0 0 0 210px #ffffff25, 0 0 0 280px #ffffff25, 0 0 0 350px #ffffff25, 0 0 0 420px #ffffff25;
@@ -78,13 +78,29 @@ body {
 
 .portfolio {
   position: absolute;
-  right: 35vw;
+  right: 30vw;
   top: 50%;
   -webkit-transform: translateY(-50%) !important;
           transform: translateY(-50%) !important;
   font-size: 5rem;
   color: #ff4d5a;
   text-shadow: 10px 10px 0 #00000030;
+  z-index: 11;
+}
+
+.main-moon {
+  position: absolute;
+  right: 20vw;
+  top: 50%;
+  -webkit-transform: translateY(-50%) !important;
+          transform: translateY(-50%) !important;
+}
+
+.main-moon .circle {
+  width: 45vmin;
+  height: 45vmin;
+  border-radius: 100%;
+  background: #fff;
 }
 
 #fp-nav {

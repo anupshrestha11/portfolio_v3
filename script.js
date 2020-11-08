@@ -22,5 +22,7 @@ new fullpage("#fullpage", {
 
 var scene = document.getElementById("scene");
 var portfolio = document.querySelector(".portfolio");
+var mainMoon = document.querySelector(".main-moon");
 var parallaxInstance = new Parallax(scene);
 var parallaxInstance = new Parallax(portfolio);
+var parallaxInstance = new Parallax(mainMoon);
